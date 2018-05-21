@@ -2,15 +2,15 @@
 <resources>
 
         <style name="DarkTheme" parent="BaseDarkTheme">
-                <item name="itemBackgroundStyle">@drawable/background_item</item>
-                <item name="itemBackgroundHighlightStyle">@drawable/background_item_highlight</item>
+                <item name="itemBackgroundStyle">@drawable/background_item_21</item>
+                <item name="itemBackgroundHighlightStyle">@drawable/background_item_highlight_21</item>
                 <item name="android:colorAccent">@color/white</item>
                 <item name="android:alertDialogTheme">@style/AlertDialogTheme.Dark</item>
         </style>
 
         <style name="LightTheme" parent="BaseLightTheme">
-                <item name="itemBackgroundStyle">@drawable/background_item</item>
-                <item name="itemBackgroundHighlightStyle">@drawable/background_item_highlight</item>
+                <item name="itemBackgroundStyle">@drawable/background_item_21</item>
+                <item name="itemBackgroundHighlightStyle">@drawable/background_item_highlight_21</item>
                 <item name="android:colorAccent">?attr/colorAccent</item>
                 <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
         </style>

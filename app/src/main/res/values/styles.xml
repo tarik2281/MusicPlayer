@@ -104,8 +104,8 @@
     </style>
 
     <style name="EqBandSeekBar">
-        <item name="android:thumb">@drawable/eq_band_thumb</item>
-        <item name="android:progressDrawable">@drawable/eq_band_progress</item>
+        <item name="android:thumb">?attr/eqThumbStyle</item>
+        <item name="android:progressDrawable">?attr/eqBandStyle</item>
     </style>
 
     <style name="AppTheme" parent="DarkTheme">
