@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/text_sleep"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/spinner_sleep_timer"
+            android:text="@string/dialog_sleep_timer_text"
+            android:textAppearance="@style/TextAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinner_sleep_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text_sleep"
+            android:layout_toEndOf="@+id/text_sleep"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:entries="@array/dialog_sleep_timer_spinner_values" />
+
+    </RelativeLayout>
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:headerBackground="@null"
+        android:headerTimeTextAppearance="@style/HeaderTimeTextAppearance">
+
+    </TimePicker>
+
+    <CheckBox
+        android:id="@+id/check_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/dialog_sleep_timer_repeat_daily"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/text_duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/dialog_sleep_timer_text_duration"
+        android:textAppearance="@style/TextAppearanceSmall" />
+
+    <!--<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">-->
+
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/dialog_content_margin"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/separator1"
+                android:layout_toStartOf="@+id/separator1"
+                android:id="@+id/picker_hours"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/picker_minutes"
+                android:layout_toStartOf="@+id/picker_minutes"
+                android:textAppearance="@style/TextAppearanceMedium"
+                android:text=":"
+                android:padding="10dp"
+                android:id="@+id/separator1"/>
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:id="@+id/picker_minutes"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/picker_minutes"
+                android:layout_toEndOf="@+id/picker_minutes"
+                android:textAppearance="@style/TextAppearanceMedium"
+                android:text=":"
+                android:padding="10dp"
+                android:id="@+id/separator2"/>
+
+            <NumberPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/separator2"
+                android:layout_toEndOf="@+id/separator2"
+                android:id="@+id/picker_seconds"
+                android:layout_margin="10dp" />
+        </RelativeLayout>-->
+
+    <!--</ScrollView>-->
+
+</LinearLayout>

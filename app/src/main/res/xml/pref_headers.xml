@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header
+        android:fragment="com.example.musicplayer.ui.activities.SettingsActivity$AppearanceFragment"
+        android:title="@string/pref_screen_title_appearance" />
+
+    <header
+        android:fragment="com.example.musicplayer.ui.activities.SettingsActivity$LibraryFragment"
+        android:title="@string/pref_screen_title_library" />
+
+    <header
+        android:fragment="com.example.musicplayer.ui.activities.SettingsActivity$MiscFragment"
+        android:title="@string/pref_screen_title_misc" />
+
+    <header
+        android:fragment="com.example.musicplayer.ui.activities.SettingsActivity$InfoFragment"
+        android:title="@string/pref_screen_title_info" />
+
+</preference-headers>

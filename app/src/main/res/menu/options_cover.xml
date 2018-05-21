@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option_extract"
+        android:title="@string/option_extract_to_gallery" />
+    <item
+        android:id="@+id/option_choose"
+        android:title="@string/option_choose_image" />
+    <item
+        android:id="@+id/option_delete"
+        android:title="@string/option_delete" />
+</menu>

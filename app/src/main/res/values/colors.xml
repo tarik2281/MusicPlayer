@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+
+    <color name="bar_button_light">#bddd</color>
+    <color name="bar_button_pressed_light">#7bbb</color>
+    <color name="bar_button_highlight_light">#b888</color>
+
+    <color name="bar_button_dark">#bb414141</color>
+    <color name="bar_button_pressed_dark">#77626262</color>
+    <color name="bar_button_highlight_dark">#bb939393</color>
+
+    <color name="bigBarItemNormal">#aaaaaa</color>
+    <color name="bigBarItemHighlight">#000000</color>
+
+    <color name="bigBarItemNormalDark">#7fffffff</color>
+    <color name="bigBarItemHighlightDark">#ffffffff</color>
+
+    <color name="pressed">#ffbbbbbb</color>
+    <color name="cover_pressed">#7fbbbbbb</color>
+
+    <color name="background_dark">#ff303030</color>
+    <color name="background_light">#fffafafa</color>
+
+    <color name="highlight_dark">@color/white</color>
+    <color name="highlight_light">@color/black</color>
+
+    <color name="eq_band_light">#7f000000</color>
+    <color name="eq_band_dark">#7fffffff</color>
+    <color name="eq_thumb_light">@color/black</color>
+    <color name="eq_thumb_dark">@color/white</color>
+</resources>

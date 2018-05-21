@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/option_save"
+        android:title="@string/option_save" />
+    <group android:id="@+id/preset_group_prebuilt">
+        <item android:id="@+id/option_restore_default"
+            android:title="@string/option_restore_default" />
+    </group>
+    <group android:id="@+id/preset_group_custom">
+        <item android:id="@+id/option_rename"
+            android:title="@string/option_rename" />
+        <item android:id="@+id/option_delete"
+            android:title="@string/option_delete" />
+    </group>
+</menu>

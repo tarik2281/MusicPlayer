@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/option_shuffle"
+        android:title="@string/option_shuffle"
+        android:orderInCategory="@integer/order_item" />
+    <item android:id="@+id/option_play_next"
+        android:title="@string/option_play_next"
+        android:orderInCategory="@integer/order_item" />
+    <!--<item android:id="@+id/option_add_to_queue"
+        android:title="@string/option_add_to_queue"
+        android:orderInCategory="@integer/order_item" />-->
+    <item android:id="@+id/option_add_to_playlist"
+        android:title="@string/option_add_to_playlist"
+        android:orderInCategory="@integer/order_item" />
+    <item android:id="@+id/option_export"
+        android:title="@string/option_export"
+        android:orderInCategory="@integer/order_item" />
+
+    <group
+        android:id="@+id/option_group_editing"
+        android:orderInCategory="@integer/order_item" >
+
+        <item android:id="@+id/option_rename"
+              android:title="@string/option_rename" />
+        <item android:id="@+id/option_delete"
+              android:title="@string/option_delete" />
+
+    </group>
+
+    <item
+        android:id="@+id/option_information"
+        android:title="@string/option_information"
+        android:orderInCategory="@integer/order_item" />
+
+</menu>

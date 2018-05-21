@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/item_height"
+    android:padding="@dimen/list_view_divider_height_half"
+    android:background="?attr/itemBackgroundStyle">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@+id/checkbox"
+        android:layout_toEndOf="@+id/checkbox"
+        android:layout_toLeftOf="@+id/options_button"
+        android:layout_toStartOf="@+id/options_button"
+        android:layout_marginLeft="@dimen/list_view_divider_height_half"
+        android:layout_marginStart="@dimen/list_view_divider_height_half"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            style="@style/ItemText" />
+
+        <TextView
+            android:id="@+id/text_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:text="Path"
+            style="@style/ItemText.Small" />
+
+    </LinearLayout>
+
+    <include layout="@layout/options_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

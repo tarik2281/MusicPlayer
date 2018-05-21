@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/option_unhide"
+        android:title="@string/option_unhide"
+        android:orderInCategory="@integer/order_item" />
+    <!--<item
+        android:id="@+id/option_add_to_queue"
+        android:title="@string/option_add_to_queue"
+        android:orderInCategory="@integer/order_item" />-->
+    <item
+        android:id="@+id/option_play_next"
+        android:title="@string/option_play_next"
+        android:orderInCategory="@integer/order_item" />
+    <item
+        android:id="@+id/option_add_to_playlist"
+        android:title="@string/option_add_to_playlist"
+        android:orderInCategory="@integer/order_item" />
+    <item
+        android:id="@+id/option_menu_show"
+        android:title="@string/option_show_overflow"
+        android:orderInCategory="@integer/order_item">
+        <menu>
+            <item
+                android:id="@+id/option_sub_show_artist"
+                android:title="@string/option_show_artist_overflow"/>
+            <item
+                android:id="@+id/option_sub_show_album"
+                android:title="@string/option_show_album_overflow"/>
+            <item
+                android:id="@+id/option_sub_show_folder"
+                android:title="@string/option_show_folder_overflow"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/option_edit_tags"
+        android:title="@string/option_edit_tags"
+        android:orderInCategory="@integer/order_item" />
+    <item
+        android:id="@+id/option_hide"
+        android:title="@string/option_hide"
+        android:orderInCategory="@integer/order_item" />
+	<item
+	    android:id="@+id/option_delete"
+	    android:title="@string/option_delete"
+        android:orderInCategory="@integer/order_item" />
+    <!-- remove option for playlists -->
+    <item
+        android:id="@+id/option_remove"
+        android:title="@string/option_remove"
+        android:orderInCategory="@integer/order_item"
+        android:visible="false"
+        android:enabled="false" />
+	<item
+	    android:id="@+id/option_information"
+	    android:title="@string/option_information"
+        android:orderInCategory="@integer/order_item" />
+    
+</menu>

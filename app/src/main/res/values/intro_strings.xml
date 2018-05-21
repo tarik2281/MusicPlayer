@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="intro_welcome">Welcome!</string>
+    <string name="intro_getting_started">Getting started</string>
+    <string name="intro_instruction_theme">Choose the app theme you prefer</string>
+    <string name="intro_instruction_cover">Choose how album covers are shown</string>
+    <string name="intro_instruction_getting_started">Drag the side bar to the side to open the playback view</string>
+    <string name="intro_instruction_getting_started_tablet">Drag the bottom bar to the top to open the playback view</string>
+    <string name="intro_getting_started_done">Done!</string>
+
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/cover_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/standard_cover_low"
+        android:adjustViewBounds="true" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_title"
+            style="@style/ItemText.Small" />
+
+        <TextView
+            android:id="@+id/text_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginStart="6dp"
+            android:text="@string/text_artist"
+            style="@style/ItemText.Small" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/button_previous"
+        android:src="@drawable/previous_button"
+        style="@style/SmallServiceControl"/>
+
+    <ImageButton
+        android:id="@+id/button_play_pause"
+        android:src="@drawable/pause_button"
+        style="@style/SmallServiceControl"/>
+
+    <ImageButton
+        android:id="@+id/button_next"
+        android:src="@drawable/next_button"
+        style="@style/SmallServiceControl"/>
+
+    <ImageButton
+        android:id="@+id/button_close"
+        android:src="@drawable/ic_close_black_24dp"
+        style="@style/SmallServiceControl"/>
+
+</merge>

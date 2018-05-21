@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/widget_cover_size"
+    android:background="?android:attr/windowBackground">
+
+    <ImageView
+        tools:ignore="ContentDescription"
+        android:id="@id/cover_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/standard_cover"/>
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toRightOf="@id/cover_view"
+            android:layout_toEndOf="@id/cover_view"
+            android:layout_toLeftOf="@+id/button_close"
+            android:layout_toStartOf="@+id/button_close"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="6dp"
+            style="@style/MarqueeText">
+
+            <requestFocus />
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_alignLeft="@+id/text_title"
+            android:layout_alignStart="@+id/text_title"
+            android:layout_below="@+id/text_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginEnd="3dp"
+            style="@style/ItemText.Small" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/cover_view"
+            android:layout_toRightOf="@id/cover_view"
+            android:layout_toEndOf="@id/cover_view"
+            android:layout_below="@+id/text_artist"
+            android:layoutDirection="ltr"
+            style="@style/ButtonBar">
+
+            <ImageButton
+                android:src="@drawable/previous_button"
+                android:id="@+id/button_previous"
+                android:background="@drawable/background_button"
+                android:tint="?android:attr/textColorPrimary"
+                style="@style/ButtonBarButton"/>
+
+            <ImageButton
+                android:src="@drawable/play_button"
+                android:id="@+id/button_play_pause"
+                android:background="@drawable/background_button"
+                android:tint="?android:attr/textColorPrimary"
+                style="@style/ButtonBarButton"/>
+
+            <ImageButton
+                android:src="@drawable/next_button"
+                android:id="@+id/button_next"
+                android:background="@drawable/background_button"
+                android:tint="?android:attr/textColorPrimary"
+                style="@style/ButtonBarButton"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:padding="2dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_close_black_24dp"
+            style="?attr/imageButtonStyle"/>
+
+</RelativeLayout>

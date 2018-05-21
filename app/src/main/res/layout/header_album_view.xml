@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="?attr/coverBackgroundStyle">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp">
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:text="Album title"
+            android:textAppearance="@style/TextAppearanceMedium" />
+        
+        <TextView
+            android:id="@+id/text_artist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_title"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:textAppearance="@style/TextAppearanceSmall"
+      		android:text="Album artist" />
+        
+        <TextView
+            android:id="@+id/text_num_titles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_artist"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:paddingBottom="10dp"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:text="Album num titles" />
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:text="" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

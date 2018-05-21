@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/pref_screen_title_library">
+
+    <com.example.musicplayer.DurationPreference
+        android:key="library_ignore_short_songs"
+        android:title="@string/pref_title_ignore_short_songs"
+        android:defaultValue="0" />
+
+    <!--<SwitchPreference
+        android:key="library_ignore_short_songs"
+        android:title="Ignore short songs"
+        android:defaultValue="false" />
+
+    <com.example.musicplayer.DurationPreference
+        android:key="library_least_song_duration"
+        android:title="Least song duration"
+        android:defaultValue="20"
+        android:dependency="library_ignore_short_songs" />-->
+
+    <Preference
+        android:key="hidden_songs"
+        android:title="@string/pref_title_hidden_songs"
+        android:summary="@string/pref_summary_hidden_songs" />
+
+    <Preference
+        android:key="import_playlist"
+        android:title="@string/pref_title_import_playlist"
+        android:summary="@string/pref_summary_import_playlist" />
+
+    <SwitchPreference
+        android:key="use_song_file_names"
+        android:title="@string/pref_title_use_song_file_names"
+        android:summary="@string/pref_summary_use_song_file_names"
+        android:defaultValue="false" />
+
+    <Preference
+        android:key="scanned_directories"
+        android:title="@string/pref_title_scanned_directories"
+        android:summary="@string/pref_summary_scanned_directories" />
+
+    <MultiSelectListPreference
+        android:key="automatic_playlists"
+        android:title="@string/pref_title_automatic_playlists"
+        android:summary="@string/pref_summary_automatic_playlists"
+        android:entries="@array/pref_automatic_playlists_entries"
+        android:entryValues="@array/pref_automatic_playlists_values"
+        android:defaultValue="@array/pref_automatic_playlists_values"/>
+
+    <!--<com.example.musicplayer.ConfirmPreference
+        android:key="rescan_library"
+        android:title="Rescan library"
+        android:dialogMessage="The library will be completely reread. This may take a while. Continue?"/>
+
+    <com.example.musicplayer.ConfirmPreference
+        android:key="delete_album_art_cache"
+        android:title="Delete album art cache"
+        android:dialogMessage="Delete album art cache? Album arts will be reread."/>-->
+
+</PreferenceScreen>

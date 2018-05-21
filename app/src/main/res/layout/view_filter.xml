@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="?android:attr/windowBackground"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/view_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        app:iconifiedByDefault="false"
+        app:queryHint="@string/search_hint" />
+
+    <ImageButton
+        android:id="@+id/view_sorting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_sort_black_24dp"
+        android:tint="?attr/colorAccent"
+        android:padding="8dp" />
+
+</LinearLayout>

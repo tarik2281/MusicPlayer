@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- general -->
+    <string name="option_shuffle">Shuffle</string>
+    <string name="option_play_next">Play next</string>
+    <string name="option_add_to_queue">Add to queue</string>
+    <string name="option_add_to_playlist">Add to playlist</string>
+    <string name="option_show_overflow">Show …</string>
+    <string name="option_show_artist_overflow">… artist</string>
+    <string name="option_show_album_overflow">… album</string>
+    <string name="option_show_folder_overflow">… folder</string>
+    <string name="option_show_artist">Show artist</string>
+    <string name="option_edit_tags">Edit tags</string>
+    <string name="option_export">Export</string>
+    <string name="option_save">Save</string>
+    <string name="option_rename">Rename</string>
+    <string name="option_remove">Remove</string>
+    <string name="option_restore_default">Restore default</string>
+    <string name="option_delete">Delete</string>
+    <string name="option_reset">Reset</string>
+    <string name="option_information">Information</string>
+    <string name="option_hide">Hide</string>
+    <string name="option_unhide">Unhide</string>
+
+    <!-- base activity options -->
+    <string name="option_sleep_timer">Sleep timer</string>
+    <string name="option_settings">Settings</string>
+
+    <!-- sleep timer -->
+    <string name="option_start">Start</string>
+    <string name="option_pause">Pause</string>
+    <string name="option_cancel">Cancel</string>
+
+    <!-- album cover -->
+    <string name="option_extract_to_gallery">Extract to gallery</string>
+    <string name="option_choose_image">Choose image</string>
+
+    <!-- file picker -->
+    <string name="option_new_folder">New folder</string>
+</resources>

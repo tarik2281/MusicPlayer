@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/album_cover_size"
+    android:layout_height="@dimen/album_cover_size"
+    android:id="@+id/cover_view"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/standard_cover"
+    android:src="@drawable/foreground_cover" />

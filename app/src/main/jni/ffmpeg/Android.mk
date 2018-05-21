@@ -1,0 +1,50 @@
+
+FFMPEG_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := libavcodec
+LOCAL_SRC_FILES := $(FFMPEG_PATH)/libs/$(TARGET_ARCH_ABI)/libavcodec.a
+LOCAL_EXPORT_C_INCLUDES := $(FFMPEG_PATH)/include
+
+include $(PREBUILT_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := libavformat
+LOCAL_SRC_FILES := $(FFMPEG_PATH)/libs/$(TARGET_ARCH_ABI)/libavformat.a
+LOCAL_EXPORT_C_INCLUDES := $(FFMPEG_PATH)/include
+
+include $(PREBUILT_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := libswscale
+LOCAL_SRC_FILES := $(FFMPEG_PATH)/libs/$(TARGET_ARCH_ABI)/libswscale.a
+LOCAL_EXPORT_C_INCLUDES := $(FFMPEG_PATH)/include
+
+include $(PREBUILT_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := libavutil
+LOCAL_SRC_FILES := $(FFMPEG_PATH)/libs/$(TARGET_ARCH_ABI)/libavutil.a
+LOCAL_EXPORT_C_INCLUDES := $(FFMPEG_PATH)/include
+
+include $(PREBUILT_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := libavfilter
+LOCAL_SRC_FILES := $(FFMPEG_PATH)/libs/$(TARGET_ARCH_ABI)/libavfilter.a
+LOCAL_EXPORT_C_INCLUDES := $(FFMPEG_PATH)/include
+
+include $(PREBUILT_STATIC_LIBRARY)
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := libswresample
+LOCAL_SRC_FILES := $(FFMPEG_PATH)/libs/$(TARGET_ARCH_ABI)/libswresample.a
+LOCAL_EXPORT_C_INCLUDES := $(FFMPEG_PATH)/include
+
+include $(PREBUILT_STATIC_LIBRARY)

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/align_extra"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/text_bass"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/align_extra"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:text="@string/equalizer_text_bass"
+        android:textAppearance="@style/TextAppearanceSmall"
+        android:layout_marginBottom="7dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/text_bass_gain"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_bass"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearanceSmall"
+        android:text="0 db"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_bass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_bass"
+        android:layout_toLeftOf="@+id/text_bass_gain"
+        android:layout_alignTop="@+id/text_bass"
+        android:layout_alignBottom="@+id/text_bass"
+        android:max="10"
+        android:progress="5"
+        style="@style/EqBandSeekBar"/>
+
+    <TextView
+        android:id="@+id/text_treble"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/align_extra"
+        android:layout_alignParentLeft="true"
+        android:text="@string/equalizer_text_treble"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearanceSmall"
+        android:layout_marginTop="7dp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/text_treble_gain"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_treble"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearanceSmall"
+        android:text="0 db"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_treble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_treble"
+        android:layout_toLeftOf="@+id/text_treble_gain"
+        android:layout_alignTop="@+id/text_treble"
+        android:layout_alignBottom="@+id/text_treble"
+        android:max="10"
+        android:progress="5"
+        style="@style/EqBandSeekBar"/>
+
+    <!--<TextView
+        android:id="@+id/text_volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_treble"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Volume 100%"
+        android:textAppearance="@style/TextAppearanceSmall" />
+
+    <SeekBar
+        android:id="@+id/seekbar_volume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_volume"
+        android:max="100"
+        android:progress="100"
+        style="@style/EqBandSeekBar"/>-->
+
+</merge>

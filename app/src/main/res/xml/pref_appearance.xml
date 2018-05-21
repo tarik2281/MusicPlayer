@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/pref_screen_title_appearance">
+
+    <PreferenceCategory
+        android:key="category_general"
+        android:title="@string/pref_category_appearance_general">
+
+        <ListPreference
+            android:key="app_theme"
+            android:defaultValue="0"
+            android:entries="@array/pref_themes"
+            android:entryValues="@array/pref_themes_values"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_title_app_theme" />
+
+        <SwitchPreference
+            android:key="show_parent_folders"
+            android:title="@string/pref_title_show_parent_folders"
+            android:summary="@string/pref_summary_show_parent_folders"
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="sidebar_portrait_pos"
+            android:title="@string/pref_title_side_bar_position"
+            android:entries="@array/pref_sidebar_portrait"
+            android:entryValues="@array/pref_sidebar_portrait_values"
+            android:positiveButtonText="@null"
+            android:negativeButtonText="@null"
+            android:defaultValue="1" />
+
+        <Preference
+            android:key="edit_start_layout"
+            android:title="@string/pref_title_edit_side_bar"
+            android:summary="@string/pref_summary_edit_side_bar" />
+
+        <SwitchPreference
+            android:key="sidebar_titles_visible"
+            android:title="@string/pref_title_sidebar_titles_visible"
+            android:summary="@string/pref_summary_sidebar_titles_visible"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="category_playback"
+        android:title="@string/pref_category_appearance_playback_view">
+
+        <SwitchPreference
+            android:key="show_time_remaining"
+            android:title="@string/pref_title_show_time_remaining"
+            android:summary="@string/pref_summary_show_time_remaining"
+            android:defaultValue="false" />
+
+        <ListPreference
+            android:key="player_album_cover_size"
+            android:title="@string/pref_title_album_cover_size"
+            android:entries="@array/pref_album_cover_size_entries"
+            android:entryValues="@array/pref_album_cover_size_values"
+            android:positiveButtonText="@null"
+            android:negativeButtonText="@null"
+            android:defaultValue="0" />
+
+        <SwitchPreference
+            android:key="lockscreen_show_art"
+            android:defaultValue="true"
+            android:title="@string/pref_title_lockscreen_show_art"
+            android:summary="@string/pref_summary_lockscreen_show_art" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

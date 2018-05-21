@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/item_height"
+    android:orientation="horizontal"
+    android:padding="@dimen/list_view_divider_height_half"
+    android:id="@+id/layout_entry_song"
+    android:background="?attr/itemBackgroundStyle">
+
+    <com.example.musicplayer.ui.AlbumArtView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:id="@+id/album_art_view" />
+
+    <include layout="@layout/layout_song_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_gravity="center_vertical" />
+
+    <ImageView
+        android:id="@+id/drag_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:padding="16dp"
+        android:tint="?attr/colorAccent"
+        android:src="@drawable/ic_reorder_black_24dp"/>
+
+    <include
+        layout="@layout/options_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical" />
+
+</LinearLayout>

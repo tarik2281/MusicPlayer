@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="DarkTheme" parent="BaseDarkTheme">
+                <item name="itemBackgroundStyle">@drawable/background_item</item>
+                <item name="itemBackgroundHighlightStyle">@drawable/background_item_highlight</item>
+                <item name="android:colorAccent">@color/white</item>
+                <item name="android:alertDialogTheme">@style/AlertDialogTheme.Dark</item>
+        </style>
+
+        <style name="LightTheme" parent="BaseLightTheme">
+                <item name="itemBackgroundStyle">@drawable/background_item</item>
+                <item name="itemBackgroundHighlightStyle">@drawable/background_item_highlight</item>
+                <item name="android:colorAccent">?attr/colorAccent</item>
+                <item name="android:alertDialogTheme">@style/AlertDialogTheme</item>
+        </style>
+
+        <style name="AlertDialogTheme" parent="android:Theme.Material.Light.Dialog.Alert">
+                <item name="android:colorAccent">?attr/colorAccent</item>
+                <item name="android:colorPrimary">?attr/colorPrimary</item>
+        </style>
+
+        <style name="AlertDialogTheme.Dark" parent="android:Theme.Material.Dialog.Alert">
+                <item name="android:colorAccent">?attr/colorAccent</item>
+                <item name="android:colorPrimary">?attr/colorPrimary</item>
+        </style>
+
+
+        <!--<style name="AppTheme" parent="Theme.AppCompat">
+                <item name="colorPrimary">@color/colorPrimary</item>
+                <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+                <item name="colorAccent">@color/colorAccent</item>
+                <item name="android:windowBackground">@color/windowBackground</item>
+                <item name="android:statusBarColor">?android:attr/colorPrimaryDark</item>
+                <item name="android:navigationBarColor">?android:attr/colorPrimaryDark</item>
+                <item name="editTextStyle">@style/Widget.AppCompat.EditText</item>
+                <item name="buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
+                <item name="imageButtonStyle">@style/ImageButton</item>
+        </style>-->
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/option_sleep_timer"
+        android:title="@string/option_sleep_timer"
+        android:orderInCategory="@integer/order_base_item" />
+    <item
+        android:id="@+id/option_settings"
+        android:title="@string/option_settings"
+        android:orderInCategory="@integer/order_base_item" />
+</menu>

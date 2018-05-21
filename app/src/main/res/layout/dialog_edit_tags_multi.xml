@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/dialog_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:text="@string/tags_artist"
+            android:labelFor="@+id/edit_artist" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusForward="@+id/edit_album_artist"
+            style="@style/TagsEditText.AutoComplete"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:text="@string/tags_album_artist"
+            android:labelFor="@+id/edit_album_artist" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_album_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusForward="@+id/edit_album"
+            style="@style/TagsEditText.AutoComplete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:text="@string/tags_album"
+            android:labelFor="@+id/edit_album" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusForward="@+id/edit_genre"
+            style="@style/TagsEditText.AutoComplete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:text="@string/tags_genre"
+            android:labelFor="@+id/edit_genre" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusForward="@+id/edit_year"
+            style="@style/TagsEditText.AutoComplete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:text="@string/tags_year"
+            android:labelFor="@+id/edit_year" />
+
+        <EditText
+            android:id="@+id/edit_year"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:maxLength="4"
+            android:imeOptions="actionDone"
+            style="@style/TagsEditText.Number"/>
+
+        <include
+            layout="@layout/base_edit_tags_cover" />
+
+        <TextView
+            android:text="@string/tags_preset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearanceSmall" />
+
+        <Spinner
+            android:id="@+id/spinner_preset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

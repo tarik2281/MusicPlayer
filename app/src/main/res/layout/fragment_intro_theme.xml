@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearanceLarge"
+        android:layout_margin="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/text_instruction"
+        android:text="@string/intro_welcome"/>
+
+    <TextView
+        android:id="@+id/text_instruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Choose the app theme you prefer"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/image_left"
+        android:textAppearance="@style/TextAppearanceSmall"/>
+
+    <View
+        android:id="@+id/align"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+
+    <ImageView
+        android:id="@+id/image_left"
+        android:layout_width="138.46dp"
+        android:layout_height="220.76dp"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/align"
+        android:layout_centerVertical="true"
+        android:src="@drawable/screen_light"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/text_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_left"
+        android:layout_alignLeft="@+id/image_left"
+        android:layout_alignRight="@+id/image_left"
+        android:text="Light"
+        style="@style/TextIntro"/>
+
+    <ImageView
+        android:id="@+id/image_right"
+        android:layout_width="138.46dp"
+        android:layout_height="220.76dp"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/align"
+        android:layout_centerVertical="true"
+        android:src="@drawable/screen_dark"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/text_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_right"
+        android:layout_alignLeft="@+id/image_right"
+        android:layout_alignRight="@+id/image_right"
+        android:text="Dark"
+        style="@style/TextIntro"/>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/pref_screen_title_misc">
+
+    <SwitchPreference
+        android:key="start_playback_headset"
+        android:title="@string/pref_title_start_playback_headset"
+        android:summary="@string/pref_summary_start_playback_headset"
+        android:defaultValue="false" />
+
+    <SwitchPreference
+        android:key="start_playback_bluetooth"
+        android:title="@string/pref_title_start_playback_bluetooth"
+        android:summary="@string/pref_summary_start_playback_bluetooth"
+        android:defaultValue="false" />
+
+    <SwitchPreference
+        android:key="fade_on_play_pause"
+        android:title="@string/pref_title_fade_on_play_pause"
+        android:summary="@string/pref_summary_fade_on_play_pause"
+        android:defaultValue="true" />
+
+    <SwitchPreference
+        android:key="lower_volume_incoming_message"
+        android:title="@string/pref_title_lower_volume_incoming_message"
+        android:summary="@string/pref_summary_lower_volume_incoming_message"
+        android:defaultValue="true" />
+
+    <SwitchPreference
+        android:key="rewind_on_previous"
+        android:title="@string/pref_title_rewind_on_previous"
+        android:summary="@string/pref_summary_rewind_on_previous"
+        android:defaultValue="true" />
+
+    <ListPreference
+        android:key="playlist_add_duplicate"
+        android:title="@string/pref_title_playlist_add_duplicate"
+        android:defaultValue="2"
+        android:positiveButtonText="@null"
+        android:negativeButtonText="@null"
+        android:entries="@array/pref_playlist_add_duplicate"
+        android:entryValues="@array/pref_playlist_add_duplicate_values" />
+
+    <Preference
+        android:key="backup_data"
+        android:title="@string/pref_title_backup_data"
+        android:summary="@string/pref_summary_backup_data"/>
+
+    <com.example.musicplayer.ConfirmPreference
+        android:key="restore_data"
+        android:title="@string/pref_title_restore_data"
+        android:summary="@string/pref_summary_restore_data"
+        android:dialogMessage="@string/dialog_restore_data_message"/>
+
+    <Preference
+        android:key="select_writable_dirs"
+        android:title="@string/pref_title_select_writable_dirs"
+        android:summary="@string/pref_summary_select_writable_dirs"/>
+
+</PreferenceScreen>

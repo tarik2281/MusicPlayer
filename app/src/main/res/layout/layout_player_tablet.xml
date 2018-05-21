@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:minWidth="500dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_weight="0">
+
+        <com.example.musicplayer.ui.CoverView
+            android:id="@+id/cover_view_small"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            app:drawGradient="false"/>
+
+        <LinearLayout
+            android:id="@+id/layout_song_view"
+            android:layout_toRightOf="@+id/cover_view_small"
+            android:layout_toLeftOf="@+id/button_previous_small"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            tools:ignore="RtlHardcoded">
+
+            <com.example.musicplayer.ui.MarqueeTextView
+                android:id="@+id/text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_title"
+                style="@style/MarqueeText"/>
+
+            <com.example.musicplayer.ui.MarqueeTextView
+                android:id="@+id/text_artist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_artist"
+                style="@style/MarqueeText.Small"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/button_previous_small"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/previous_button"
+            android:layout_toLeftOf="@+id/button_play_pause_small"
+            tools:ignore="RtlHardcoded"/>
+
+        <ImageButton
+            android:id="@+id/button_play_pause_small"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:src="@drawable/play_button"
+            android:layout_toLeftOf="@+id/button_next_small"
+            tools:ignore="RtlHardcoded"/>
+
+        <ImageButton
+            android:id="@+id/button_next_small"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="center"
+            android:src="@drawable/next_button"
+            tools:ignore="RtlHardcoded"/>
+
+        <ImageButton
+            android:id="@+id/options_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            tools:ignore="RtlHardcoded"/>
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">-->
+
+        <com.example.musicplayer.ui.CoverView
+            android:id="@+id/cover_view"
+            android:layout_width="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            app:drawGradient="false"
+            app:sizeMode="flexible"/>
+
+    <!--</RelativeLayout>-->
+
+    <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_weight="0"
+         android:paddingTop="2dp">
+
+        <ImageButton
+            android:id="@+id/button_queue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_queue_music_black_36dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/button_shuffle"
+            android:layout_alignBottom="@+id/button_shuffle"
+            tools:ignore="RtlHardcoded"/>
+
+        <ImageButton
+            android:id="@+id/button_equalizer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button_queue"
+            android:layout_toRightOf="@+id/button_repeat"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_equalizer_black_36dp"
+            tools:ignore="RtlHardcoded"/>
+
+        <ImageButton
+            android:id="@+id/button_shuffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_shuffle_black_36dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignTop="@+id/button_play_pause"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toLeftOf="@+id/button_previous"
+            tools:ignore="RtlHardcoded"/>
+
+        <ImageButton
+            android:id="@+id/button_repeat"
+            android:src="@drawable/ic_repeat_black_36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/button_play_pause"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_toRightOf="@+id/button_next"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageButton
+            android:id="@+id/button_play_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/play_button_big" />
+
+        <ImageButton
+            android:id="@+id/button_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_play_pause"
+            android:layout_alignBottom="@+id/button_play_pause"
+            android:layout_toRightOf="@+id/button_play_pause"
+            android:src="@drawable/next_button_big"
+            tools:ignore="RtlHardcoded" />
+
+        <ImageButton
+            android:id="@+id/button_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_play_pause"
+            android:layout_alignBottom="@+id/button_play_pause"
+            android:layout_toLeftOf="@+id/button_play_pause"
+            android:src="@drawable/previous_button_big"
+            tools:ignore="RtlHardcoded" />
+
+        <SeekBar
+            android:id="@+id/bar_play_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button_play_pause"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView
+            android:id="@+id/text_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bar_play_time"
+            android:layout_alignLeft="@+id/bar_play_time"
+            android:paddingBottom="14dp"
+            android:layout_marginLeft="10dp"
+            android:text="00:00"
+            android:textAppearance="@style/TextAppearanceSmall"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/text_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text_position"
+            android:layout_alignRight="@+id/bar_play_time"
+            android:layout_marginRight="10dp"
+            android:text="00:00"
+            android:textAppearance="@style/TextAppearanceSmall"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:id="@+id/button_timer"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/text_position"
+            android:layout_centerHorizontal="true"
+            android:maxLines="1"
+            android:drawableLeft="@drawable/ic_timer_black_24dp"
+            android:drawablePadding="3dp"
+            android:text="00:00"
+            tools:ignore="RtlHardcoded"/>
+
+     </RelativeLayout>
+
+</LinearLayout>

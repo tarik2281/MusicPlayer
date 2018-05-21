@@ -1,0 +1,259 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseDarkTheme" parent="Theme.AppCompat">
+        <!--<item name="highlightBackgroundColor">@color/highlight_dark</item>-->
+
+        <item name="itemBackgroundStyle">@drawable/background_item_dark</item>
+        <item name="itemBackgroundHighlightStyle">@drawable/background_item_highlight_dark</item>
+        <item name="coverBackgroundStyle">@drawable/cover_gradient_dark</item>
+        <item name="eqBandStyle">@drawable/eq_band_progress_dark</item>
+        <item name="eqThumbStyle">@drawable/eq_band_thumb_dark</item>
+
+        <item name="highlightBackgroundColor">?attr/colorAccent</item>
+
+        <item name="colorAccent">@color/white</item>
+        <item name="colorAccentInverse">@color/black</item>
+        <item name="libraryBarSmallStyle">@style/SmallBarItemStyle.Dark</item>
+        <item name="libraryBarLargeStyle">@style/LargeBarItemStyle.Dark</item>
+        <item name="editTextStyle">@style/Widget.AppCompat.EditText</item>
+        <item name="imageButtonStyle">@style/ImageButton</item>
+        <item name="android:imageButtonStyle">@style/ImageButton</item>
+        <item name="fastScrollerStyle">@style/FastScrollerStyle.Dark</item>
+        <item name="menuAddIcon">@drawable/ic_add_white_24dp</item>
+        <item name="menuUndoIcon">@drawable/ic_undo_white_24dp</item>
+        <item name="menuRedoIcon">@drawable/ic_redo_white_24dp</item>
+        <item name="menuResetIcon">@drawable/ic_refresh_white_24dp</item>
+        <item name="buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
+        <item name="android:spinnerStyle">@style/Widget.AppCompat.Spinner</item>
+        <item name="progressBarBackgroundColor">#bd424242</item>
+        <item name="alertDialogTheme">@style/AlertDialogThemeSupport.Dark</item>
+        <item name="eqBandColor">#7fffffff</item>
+    </style>
+
+    <style name="BaseLightTheme" parent="Theme.AppCompat.Light">
+        <!--<item name="android:windowBackground">@color/white</item>-->
+
+        <!--<item name="highlightBackgroundColor">@color/highlight_light</item>-->
+        <item name="itemBackgroundStyle">@drawable/background_item</item>
+        <item name="itemBackgroundHighlightStyle">@drawable/background_item_highlight</item>
+        <item name="coverBackgroundStyle">@drawable/cover_gradient</item>
+        <item name="eqBandStyle">@drawable/eq_band_progress</item>
+        <item name="eqThumbStyle">@drawable/eq_band_thumb</item>
+
+        <item name="highlightBackgroundColor">?attr/colorAccent</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="colorAccentInverse">@color/white</item>
+        <item name="libraryBarSmallStyle">@style/SmallBarItemStyle</item>
+        <item name="libraryBarLargeStyle">@style/LargeBarItemStyle</item>
+        <item name="editTextStyle">@style/Widget.AppCompat.EditText</item>
+        <item name="imageButtonStyle">@style/ImageButton</item>
+        <item name="fastScrollerStyle">@style/FastScrollerStyle</item>
+        <item name="menuAddIcon">@drawable/ic_add_black_24dp</item>
+        <item name="menuUndoIcon">@drawable/ic_undo_black_24dp</item>
+        <item name="menuRedoIcon">@drawable/ic_redo_black_24dp</item>
+        <item name="menuResetIcon">@drawable/ic_refresh_black_24dp</item>
+        <item name="buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
+        <item name="progressBarBackgroundColor">#bdbdbdbd</item>
+        <item name="alertDialogTheme">@style/AlertDialogThemeSupport</item>
+        <item name="eqBandColor">#7f000000</item>
+    </style>
+
+    <style name="HeaderTimeTextAppearance">
+        <item name="android:textSize">60sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="AlertDialogThemeSupport" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="AlertDialogThemeSupport.Dark" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="DarkTheme" parent="BaseDarkTheme">
+
+    </style>
+
+    <style name="LightTheme" parent="BaseLightTheme">
+
+    </style>
+
+    <style name="IntroTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="TextIntro">
+        <item name="android:textAppearance">@style/TextAppearanceSmall</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="TextAppearanceIntro">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="FastScrollerStyle">
+        <item name="thumbColor">@color/black</item>
+    </style>
+
+    <style name="FastScrollerStyle.Dark">
+        <item name="thumbColor">@color/white</item>
+    </style>
+
+    <style name="EqBandSeekBar">
+        <item name="android:thumb">@drawable/eq_band_thumb</item>
+        <item name="android:progressDrawable">@drawable/eq_band_progress</item>
+    </style>
+
+    <style name="AppTheme" parent="DarkTheme">
+
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:listViewStyle">@style/BaseListView</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="editTextStyle">@style/Widget.AppCompat.EditText</item>
+        <item name="buttonStyle">@style/Widget.AppCompat.Button.Borderless.Colored</item>
+        <item name="imageButtonStyle">@style/ImageButton</item>-->
+    </style>
+
+    <style name="TintedImageView">
+        <item name="android:tint">?attr/colorAccent</item>
+    </style>
+
+    <style name="ImageButton">
+        <item name="android:background">@drawable/background_image_button</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:tint">?attr/colorAccent</item>
+    </style>
+
+    <!--<style name="ImageButton.Dark">
+        <item name="android:tint">@color/white</item>
+    </style>-->
+
+    <style name="BaseListView" parent="Widget.AppCompat.ListView">
+        <item name="android:divider">?attr/colorPrimary</item>
+        <item name="android:dividerHeight">@dimen/list_view_divider_height</item>
+    </style>
+
+    <style name="TextAppearanceLarge">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearanceMedium">
+        <item name="android:textSize">18sp</item>
+        <!--<item name="android:textColor">@color/black</item>-->
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearanceSmall">
+        <item name="android:textSize">14sp</item>
+        <!--<item name="android:textColor">@color/black</item>-->
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearanceMini">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TextAppearanceError" parent="TextAppearanceSmall">
+        <item name="android:textColor">#cc3333</item>
+    </style>
+
+    <style name="SmallBarItemStyle">
+        <item name="itemLayout">@layout/bar_small_item</item>
+        <item name="itemIconColor">?android:attr/colorAccent</item>
+        <item name="itemStyleType">background</item>
+        <item name="itemStyleNormal">@drawable/background_bar_button</item>
+        <item name="itemStyleHighlighted">@drawable/background_bar_button_highlight</item>
+    </style>
+
+    <style name="LargeBarItemStyle">
+        <item name="itemLayout">@layout/bar_large_item</item>
+        <item name="itemIconColor">?android:attr/colorAccent</item>
+        <item name="itemStyleType">color</item>
+        <item name="itemStyleNormal">@color/bigBarItemNormal</item>
+        <item name="itemStyleHighlighted">@color/bigBarItemHighlight</item>
+    </style>
+
+    <style name="SmallBarItemStyle.Dark">
+        <item name="itemStyleNormal">@drawable/background_bar_button_dark</item>
+        <item name="itemStyleHighlighted">@drawable/background_bar_button_highlight_dark</item>
+    </style>
+
+    <style name="LargeBarItemStyle.Dark">
+        <item name="itemStyleNormal">@color/bigBarItemNormalDark</item>
+        <item name="itemStyleHighlighted">@color/bigBarItemHighlightDark</item>
+    </style>
+
+    <style name="MarqueeText">
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:textAppearance">@style/TextAppearanceMedium</item>
+    </style>
+
+    <style name="MarqueeText.Small">
+        <item name="android:textAppearance">@style/TextAppearanceSmall</item>
+    </style>
+
+    <style name="ItemText">
+        <item name="android:lines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textAppearance">@style/TextAppearanceMedium</item>
+    </style>
+
+    <style name="ItemText.Small">
+        <item name="android:textAppearance">@style/TextAppearanceSmall</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ButtonBarButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="TagsEditText">
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="TagsEditText.Number">
+        <item name="android:inputType">number</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="TagsEditText.AutoComplete">
+        <item name="android:completionThreshold">1</item>
+    </style>
+
+    <style name="SmallServiceControl" parent="ImageButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dialog_content_margin"
+        android:textAppearance="@style/TextAppearanceSmall"
+        android:text="Medium Text"
+        android:id="@+id/text_warning" />
+
+    <!-- <TextView
+        android:id="@+id/text_hide"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAppearance="@style/TextAppearanceSmall"
+        android:text="@string/dialog_delete_hide_songs" /> -->
+
+</LinearLayout>

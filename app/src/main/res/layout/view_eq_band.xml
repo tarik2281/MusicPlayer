@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:gravity="center"
+        android:id="@+id/eq_band_gain"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:ems="3"
+        android:textAppearance="@style/TextAppearanceSmall"/>
+
+    <com.example.musicplayer.ui.VerticalSeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/eq_band_gain"
+        android:layout_above="@+id/eq_band_text"
+        android:padding="5dp"
+        android:max="10"
+        android:progress="5"
+        android:id="@+id/eq_band_bar"
+        style="@style/EqBandSeekBar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="32"
+        android:ems="3"
+        android:id="@+id/eq_band_text"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearanceSmall"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

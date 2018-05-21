@@ -1,0 +1,148 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="MissingTranslation">MusicPlayer</string>
+
+    <string name="title_artists">Artists</string>
+    <string name="title_albums">Albums</string>
+    <string name="title_songs">Songs</string>
+    <string name="title_genres">Genres</string>
+    <string name="title_folders">Folders</string>
+    <string name="title_playlists">Playlists</string>
+    <string name="title_queue">Queue</string>
+    <string name="title_equalizer">Equalizer</string>
+    <string name="title_add_songs">Add Songs</string>
+    <string name="title_hidden_songs">Hidden Songs</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="title_import_playlist">Import playlist</string>
+    <string name="title_select_backup_file">Select backup file</string>
+    <string name="title_select_export_dir">Select export directory</string>
+
+    <string name="unknown_artist">Unknown Artist</string>
+    <string name="unknown_album">Unknown Album</string>
+    <string name="unknown_genre">Unknown Genre</string>
+
+    <string name="search_hint">Search</string>
+
+    <string name="toast_error_access_not_granted">This application can not work without access to external storages.</string>
+
+    <!-- notification channels -->
+    <string name="playback_channel_name">Playback</string>
+    <string name="playback_channel_desc" tools:ignore="MissingTranslation">Playback desc</string><!-- TODO: playback channel description -->
+    <string name="restore_channel_name" tools:ignore="MissingTranslation">Restore data</string>
+    <string name="restore_channel_desc" tools:ignore="MissingTranslation">Restore data desc</string>
+
+    <!-- playlists -->
+    <string name="playlist_recently_added">Recently Added</string>
+    <string name="playlist_last_played">Last Played</string>
+    <string name="playlist_most_played">Most Played</string>
+
+    <!-- presets -->
+    <string name="toast_preset_applied">Applied preset \"{0}\"</string>
+
+    <!-- File picker -->
+    <string name="file_picker_internal_storage">Internal storage</string>
+    <string name="file_picker_sd_card">SD Card</string>
+    <string name="file_picker_storages">Storages</string>
+    <string name="file_picker_error_read_only">Cannot export here: Directory is read-only</string>
+    <string name="file_picker_go_up">Go up</string>
+    <string name="file_picker_button_export_here">Export here</string>
+
+    <!-- side bar editor -->
+    <string name="option_add_item">Add item</string>
+    <string name="dialog_title_add_item">Add item</string>
+    <string name="layout_editor_text_help">Swipe to remove items. The bright house shows the start-up page. Removed items can be added through the + button on the top again.</string>
+
+    <!-- Queue activity -->
+    <string name="list_header_queue">Queue</string>
+    <string name="list_header_next">Next</string>
+
+    <!-- Equalizer activity -->
+    <string name="equalizer_text_bass">Bass</string>
+    <string name="equalizer_text_treble">Treble</string>
+
+    <!-- Restore service -->
+    <string name="service_title_restore_progress">Restoring data…</string>
+    <string name="service_restore_progress_prepare">Preparing…</string>
+    <string name="service_restore_progress_prefs">Restoring preferences…</string>
+    <string name="service_restore_progress_scan">Scanning data…</string>
+    <string name="service_restore_progress_data">Restoring user data…</string>
+    <string name="service_title_restore_result">Restore data</string>
+    <string name="service_restore_result_success">Restored data successfully</string>
+    <string name="service_restore_result_error">Could not restore data</string>
+
+    <!-- general bar items -->
+    <string name="bar_item_artists">Artists</string>
+    <string name="bar_item_albums">Albums</string>
+    <string name="bar_item_songs">Songs</string>
+    <string name="bar_item_genres">Genres</string>
+    <string name="bar_item_folders">Folders</string>
+    <string name="bar_item_playlists">Playlists</string>
+
+    <!-- bar items for playlist activity -->
+    <string name="bar_item_playlist">Playlist</string>
+    <string name="bar_item_edit">Edit</string>
+
+    <!-- playlist editor actions -->
+    <string name="action_undo">Undo</string>
+    <string name="action_redo">Redo</string>
+    <string name="action_add_songs">Add songs</string>
+
+    <string name="toast_playlist_added_duplicate">Added duplicate for \"{0}\"</string>
+    <string name="toast_playlist_remove_song">Long press or swipe to remove song</string>
+    <string name="toast_added_songs_single">1 song</string>
+    <string name="toast_added_songs_multi">{0,number} songs</string>
+    <string-array name="toast_added_songs_choice">
+        <item>@string/toast_added_songs_multi</item>
+        <item>@string/toast_added_songs_single</item>
+        <item>@string/toast_added_songs_multi</item>
+    </string-array>
+    <string name="toast_added_songs_to_playlist">Added {0} to \"{1}\".</string>
+
+    <string name="search_no_artists">No artists found for \"{0}\".</string>
+    <string name="search_no_albums">No albums found for \"{0}\".</string>
+    <string name="search_no_songs">No songs found for \"{0}\".</string>
+    <string name="search_no_genres">No genres found for \"{0}\".</string>
+    <string name="search_no_folders">No folders found for \"{0}\".</string>
+    <string name="search_no_playlists">No playlists found for \"{0}\".</string>
+    <string name="folders_no_subfolders">No subfolders available</string>
+    <string name="no_items_artists">No artists available</string>
+    <string name="no_items_albums">No albums available</string>
+    <string name="no_items_songs">No songs available</string>
+    <string name="no_items_genres">No genres available</string>
+    <string name="no_items_folders">No folders available</string>
+    <string name="no_items_playlists">No playlists available</string>
+    <string name="no_items_playlist">Playlist is empty</string>
+
+    <string name="error_play_file_skip">Could not play file {0}, skipping.</string>
+    <string name="error_name_empty">Name may not be empty.</string>
+    <string name="error_directory_exists">\"{0}\" already exists.</string>
+
+    <string name="sorting_name">Name</string>
+    <string name="sorting_title">Title</string>
+    <string name="sorting_artist">Artist</string>
+    <string name="sorting_album">Album</string>
+    <string name="sorting_path">Path</string>
+    <string name="sorting_duration">Duration</string>
+    <string name="sorting_file_name">File name</string>
+    <string name="sorting_custom">Custom</string>
+
+    <string-array name="sorting_titles" tools:ignore="MissingTranslation">
+        <item>ID</item>
+        <item>@string/sorting_name</item>
+        <item>@string/sorting_title</item>
+        <item>Title Exclusive</item>
+        <item>@string/sorting_artist</item>
+        <item>@string/sorting_album</item>
+        <item>Number</item>
+        <item>@string/sorting_path</item>
+        <item>@string/sorting_duration</item>
+        <item>@string/sorting_file_name</item>
+        <item>@string/sorting_custom</item>
+    </string-array>
+
+    <string name="empty_no_hidden_songs">No hidden songs</string>
+    <string name="text_title">Title</string>
+    <string name="text_artist">Artist</string>
+    <string name="sleep_timer_text_duration">in {0} min</string>
+    <string name="sleep_timer_text_alarm">at {0}</string>
+</resources>

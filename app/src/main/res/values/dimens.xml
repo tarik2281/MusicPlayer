@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="intro_chooser_padding">2dp</dimen>
+    <dimen name="two_page_drag_offset">40dp</dimen>
+
+    <dimen name="dialog_view_spacing">25dp</dimen>
+    <dimen name="list_view_divider_height">8dp</dimen>
+    <dimen name="list_view_divider_height_half">4dp</dimen>
+    <dimen name="ignore_folders_offset">14dp</dimen>
+    <dimen name="album_cover_size">140dp</dimen>
+    <dimen name="drag_view_offset">45dp</dimen>
+    <dimen name="drag_view_offset_tablet">75dp</dimen>
+
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="icon_padding">10dp</dimen>
+
+    <dimen name="dialog_content_margin">10dp</dimen>
+
+    <dimen name="item_height">60dp</dimen>
+
+    <dimen name="widget_cover_size">88dp</dimen>
+</resources>

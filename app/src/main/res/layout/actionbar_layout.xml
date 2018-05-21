@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+		android:id="@+id/layout_song_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+		android:visibility="visible"
+		android:orientation="vertical">
+    	
+    	<com.example.musicplayer.ui.MarqueeTextView
+        	android:id="@+id/text_title"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/text_title"
+			style="@style/MarqueeText" />
+    	
+    	<com.example.musicplayer.ui.MarqueeTextView
+        	android:id="@+id/text_artist"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+			android:layout_marginLeft="6dp"
+        	android:layout_marginStart="6dp"
+        	android:text="@string/text_artist"
+			style="@style/MarqueeText.Small"/>
+    
+    </LinearLayout>
+
+    <com.example.musicplayer.ui.MarqueeTextView
+        android:id="@+id/text_library_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"
+        android:text="Library Title"
+		android:gravity="center_vertical"
+		android:drawablePadding="@dimen/icon_padding"
+		style="@style/MarqueeText"/>
+
+</RelativeLayout>

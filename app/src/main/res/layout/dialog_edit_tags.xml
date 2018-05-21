@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/dialog_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:text="@string/tags_title"
+            android:labelFor="@+id/edit_title" />
+
+        <EditText
+            android:id="@+id/edit_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusForward="@+id/edit_artist"
+            style="@style/TagsEditText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:text="@string/tags_artist"
+            android:labelFor="@+id/edit_artist" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusForward="@+id/edit_album_artist"
+            style="@style/TagsEditText.AutoComplete"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:text="@string/tags_album_artist"
+            android:labelFor="@+id/edit_album_artist" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_album_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusForward="@+id/edit_album"
+            style="@style/TagsEditText.AutoComplete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:text="@string/tags_album"
+            android:labelFor="@+id/edit_album" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusForward="@+id/edit_genre"
+            style="@style/TagsEditText.AutoComplete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:text="@string/tags_genre"
+            android:labelFor="@+id/edit_genre" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nextFocusForward="@+id/edit_track_number"
+            style="@style/TagsEditText.AutoComplete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:text="@string/tags_track_number" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edit_track_number"
+                android:nextFocusForward="@+id/edit_num_tracks"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="55dp"
+                android:layout_marginStart="55dp"
+                android:maxLength="3"
+                style="@style/TagsEditText.Number" />
+
+            <EditText
+                android:id="@+id/edit_num_tracks"
+                android:nextFocusForward="@+id/edit_disc_number"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/edit_track_number"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="55dp"
+                android:layout_marginEnd="55dp"
+                android:maxLength="3"
+                style="@style/TagsEditText.Number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearanceSmall"
+                android:text="@string/tags_of"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:text="@string/tags_disc_number" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/edit_disc_number"
+                android:nextFocusForward="@+id/edit_num_discs"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="55dp"
+                android:layout_marginStart="55dp"
+                android:maxLength="3"
+                style="@style/TagsEditText.Number" />
+
+            <EditText
+                android:id="@+id/edit_num_discs"
+                android:nextFocusForward="@+id/edit_year"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/edit_disc_number"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="55dp"
+                android:layout_marginEnd="55dp"
+                android:maxLength="3"
+                style="@style/TagsEditText.Number" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearanceSmall"
+                android:text="@string/tags_of"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/TextAppearanceSmall"
+            android:text="@string/tags_year"
+            android:labelFor="@+id/edit_year" />
+
+        <EditText
+            android:id="@+id/edit_year"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:maxLength="4"
+            android:imeOptions="actionDone"
+            style="@style/TagsEditText.Number"/>
+
+        <include
+            layout="@layout/base_edit_tags_cover" />
+
+        <TextView
+            android:text="@string/tags_preset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearanceSmall" />
+
+        <Spinner
+            android:id="@+id/spinner_preset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

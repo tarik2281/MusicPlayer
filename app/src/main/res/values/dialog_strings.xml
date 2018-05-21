@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- general buttons -->
+    <string name="dialog_button_ok">OK</string>
+    <string name="dialog_button_yes">Yes</string>
+    <string name="dialog_button_no">No</string>
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="dialog_button_confirm">Confirm</string>
+    <string name="dialog_button_delete">Delete</string>
+    <string name="dialog_button_start">Start</string>
+    <string name="dialog_button_save">Save</string>
+    <string name="dialog_button_sort">Sort</string>
+    <string name="dialog_button_export">Export</string>
+    <string name="dialog_button_hide">Hide</string>
+    <string name="dialog_button_new">New</string>
+    <string name="dialog_button_remove">Remove</string>
+    <string name="dialog_button_choose">Choose</string>
+
+    <string name="dialog_restore_data_message">Restore data from backup? All current user data will be lost.</string>
+
+    <!-- sd card access -->
+    <string name="dialog_title_sd_card_access">Write to sd card</string>
+    <string name="dialog_text_sd_card_access">To get write access on the sd card you have to choose the root directory of the sd card({0}).</string>
+
+    <!-- new folder -->
+    <string name="dialog_title_new_folder">New folder</string>
+    <string name="toast_new_folder_success">Directory created successfully</string>
+    <string name="toast_new_folder_error">Could not create directory</string>
+
+    <!-- file exists -->
+    <string name="dialog_file_exists_title">Save file</string>
+    <string name="dialog_file_exists_message">File already exists. Overwrite?</string>
+
+    <!-- sorting -->
+    <string name="dialog_title_sorting_artists">Sort artists by</string>
+    <string name="dialog_title_sorting_albums">Sort albums by</string>
+    <string name="dialog_title_sorting_songs">Sort songs by</string>
+    <string name="dialog_title_sorting_genres">Sort genres by</string>
+    <string name="dialog_title_sorting_folders">Sort folders by</string>
+    <string name="dialog_sorting_reversed">Reversed</string>
+
+    <!-- export playlist dialog -->
+    <string name="dialog_title_export_playlist">Export playlist</string>
+    <string name="dialog_export_playlist_text_type">Type:</string>
+    <string name="dialog_export_playlist_use_relative_paths">Use relative paths</string>
+    <string-array name="playlist_types" tools:ignore="MissingTranslation">
+        <item>M3U</item>
+        <item>PLS</item>
+    </string-array>
+    <string name="toast_playlist_export_success">Playlist successfully exported.</string>
+    <string name="toast_playlist_export_error">Could not export playlist</string>
+
+    <!-- Unavailable storages dialog -->
+    <string name="dialog_title_unavailable_storage">Storage unavailable</string>
+    <string name="dialog_message_unavailable_storage">The storage at {0} is not available. Do you want to remove its songs from the library?</string>
+
+    <!-- Backup -->
+    <string name="dialog_backup_title">Backup</string>
+    <string name="dialog_backup_text_name">Name</string>
+    <string name="dialog_backup_option_local">Local</string>
+    <string name="dialog_backup_option_share">Share</string>
+    <string-array name="dialog_backup_save_options">
+        <item>@string/dialog_backup_option_local</item>
+        <item>@string/dialog_backup_option_share</item>
+    </string-array>
+    <string name="chooser_title_save_backup">Save Backup</string>
+
+    <!-- Keep Queue -->
+    <string name="dialog_keep_queue_title">Keep Queue</string>
+    <string name="dialog_keep_queue_message">There are still songs in the queue. Keep songs in the queue?</string>
+
+    <!-- hide -->
+    <string name="dialog_hide_title">Hide</string>
+    <string name="dialog_hide_songs">Hide the selected songs? Hidden songs will not be shown in the library and can be unhidden in the settings.</string>
+
+    <!-- delete -->
+    <string name="dialog_delete_title">Delete</string>
+    <string name="dialog_delete_playlist">Delete the playlist \"{0}\"? This cannot be undone.</string>
+    <string name="dialog_delete_preset">Delete the preset \"{0}\"? This cannot be undone.</string>
+    <string name="dialog_delete_songs_artist">Delete the song files for the artist \"{0}\"? This cannot be undone.</string>
+    <string name="dialog_delete_songs_album">Delete the song files for the album \"{0}\"? This cannot be undone.</string>
+    <string name="dialog_delete_songs_genre">Delete the song files for the genre \"{0}\"? This cannot be undone.</string>
+    <string name="dialog_delete_songs_folder">Delete the song files for the folder \"{0}\"? This cannot be undone.</string>
+    <string name="dialog_delete_song">Delete the file for the song \"{0}\"? This cannot be undone.</string>
+
+    <!-- sleep timer -->
+    <string name="dialog_title_sleep_timer">Sleep timer</string>
+    <string name="dialog_sleep_timer_text">Sleep</string>
+    <string name="dialog_sleep_timer_after">after</string>
+    <string name="dialog_sleep_timer_at">at</string>
+    <string-array name="dialog_sleep_timer_spinner_values">
+        <item>@string/dialog_sleep_timer_after</item>
+        <item>@string/dialog_sleep_timer_at</item>
+    </string-array>
+    <string name="dialog_sleep_timer_repeat_daily">Repeat daily</string>
+    <string name="dialog_sleep_timer_text_duration">{0} minutes</string>
+
+    <!-- playlists -->
+    <string name="dialog_title_add_duplicate">Add duplicate</string>
+    <string name="dialog_title_add_to_playlist">Add to playlist</string>
+    <string name="dialog_title_new_playlist">New playlist</string>
+    <string name="dialog_title_rename_playlist">Rename playlist</string>
+    <string name="dialog_title_remove_from_playlist">Remove</string>
+
+    <string name="dialog_message_add_duplicate">The song already exists in the playlist. Add a duplicate?</string>
+    <string name="dialog_message_add_duplicate_multiple">At least one song is already in the playlist. Add duplicates for them?</string>
+    <string name="dialog_message_remove_from_playlist">Remove the song \"{0}\" from the playlist?</string>
+    <string name="dialog_checkbox_remember_decision">Remember my decision</string>
+
+    <!-- presets -->
+    <string name="dialog_title_save_preset">Save Preset</string>
+    <string name="dialog_message_overwrite_preset">Overwrite preset \"{0}\"?</string>
+    <string name="dialog_title_new_preset">New Preset</string>
+    <string name="dialog_title_rename_preset">Rename Preset</string>
+    <string name="dialog_title_reset_values">Reset</string>
+    <string name="dialog_message_reset_values">Reset values to zero?</string>
+    <string name="dialog_title_restore_default">Restore default</string>
+    <string name="dialog_message_restore_default">Restore the default values for the preset \"{0}\"?</string>
+
+    <!-- edit tags -->
+    <string name="tags_title">Title</string>
+    <string name="tags_artist">Artist</string>
+    <string name="tags_album_artist">Album artist</string>
+    <string name="tags_album">Album</string>
+    <string name="tags_genre">Genre</string>
+    <string name="tags_track_number">Track number</string>
+    <string name="tags_disc_number">Disc number</string>
+    <string name="tags_year">Year</string>
+    <string name="tags_of">of</string>
+    <string name="tags_various">Various</string>
+    <string name="tags_preset">Equalizer preset</string>
+    <string name="toast_edit_export_success">Image exported to {0}</string>
+    <string name="toast_edit_export_error">Could not export image</string>
+    <string name="dialog_save_changes_title">Save files</string>
+    <string name="dialog_save_changes_message">Save tags for {0} files? Only changes will be applied to all songs.</string>
+    <string name="dialog_save_changes_remember">Don\'t show again</string>
+
+    <!-- information -->
+    <string name="info_loading">Loading…</string>
+    <string name="info_num_albums">Albums</string>
+    <string name="info_num_songs">Songs</string>
+    <string name="info_duration">Duration</string>
+    <string name="info_size">Size</string>
+    <string name="info_file_path">File path</string>
+    <string name="info_bitrate">Bitrate</string>
+    <string name="info_sample_rate">Sample rate</string>
+    <string name="info_channels">Channels</string>
+    <string name="info_cover">Cover</string>
+    <string name="info_parent_folder">Parent folder</string>
+    <string name="info_imported_from">Imported from</string>
+</resources>

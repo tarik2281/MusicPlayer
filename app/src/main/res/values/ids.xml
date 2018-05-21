@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="pager" type="id" />
+    <item name="options_button" type="id" />
+    <item name="list" type="id" />
+    <item name="scroller" type="id" />
+    <item name="cover_view" type="id" />
+
+    <item name="radio_sorting_id" type="id" />
+    <item name="radio_sorting_name" type="id" />
+    <item name="radio_sorting_title" type="id" />
+    <item name="radio_sorting_title_ex" type="id" />
+    <item name="radio_sorting_artist" type="id" />
+    <item name="radio_sorting_album" type="id" />
+    <item name="radio_sorting_number" type="id" />
+    <item name="radio_sorting_path" type="id" />
+
+    <item name="item_play_pause" type="id" />
+    <item name="item_previous" type="id" />
+    <item name="item_next" type="id" />
+
+    <item name="item_genres" type="id" />
+    <item name="item_playlists" type="id" />
+</resources>
